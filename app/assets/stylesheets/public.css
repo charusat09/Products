@@ -1,0 +1,63 @@
+body{
+	background: url('/assets/re.png') repeat-y 0 0 ;
+	
+}
+body,td,th {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #E92024;
+	margin-top: 0%;
+}
+th{
+	font-size: 14px;
+	color: green;
+	margin: 1% 0 0 0 ;
+	float: left;
+}
+tr{
+	border: 1px solid;
+}
+.adDetails{
+	
+	//background:  #12D49B;
+	width: 100%;
+}
+.adDetails{
+	border-bottom: dashed;
+}
+.header{
+	height: 80px;
+	width: 100%;
+	border: thin solid #12D49B;
+	border-radius: 10px;
+	background-color: #3EC4ED;
+}
+.col1{
+	width: 14%;
+	min-width: 20%;
+	margin-top: 4%;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-bottom: 0%;
+	min-height: auto;
+	position: relative;
+	left: 6%;
+	float: left;
+	border-radius: 10px;
+	border: thin solid #12D49B;
+	height: 2000px;
+}
+.col2{
+	width: 60%;
+	height: 2000px;
+	margin-left: 27%;
+	margin-top: 4%;
+	border: thin solid #12D49B;
+	border-radius: 10px;
+}
+.logo{
+	
+	display: block;
+	margin: 3px 0px 0px 25px;
+	//float: left;
+}

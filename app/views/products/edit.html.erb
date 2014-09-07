@@ -1,0 +1,13 @@
+<h1>Editing product</h1>
+
+<%= form_for(:product, :url => {:controller => 'products' , :action => 'update', :id => @product.id } ) do |f| %>
+
+	<%= render(:partial => "form" , :locals => {:f => f}) %>
+
+	<div class="form-buttons">
+      <%= submit_tag("Update Ad") %>
+    </div>
+<% end %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>

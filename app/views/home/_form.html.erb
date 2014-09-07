@@ -1,0 +1,48 @@
+
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  
+  <table summary="Create New Ad">
+    <tr>
+    <th><%= f.label(:ad_title, "Title") %></th>
+    <td><%= f.text_field(:ad_title) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:rent_type) %></th>
+    <td><%= f.text_field(:rent_type) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:prise) %></th>
+    <td><%= f.text_field(:prise) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:area) %></th>
+    <td><%= f.text_field(:area) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:owner_type) %></th>
+    <td><%= f.text_field(:owner_type) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:condition) %></th>
+    <td><%= f.text_field(:condition) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:extra) %></th>
+    <td><%= f.text_field(:extra) %></td>
+  </tr>
+  
+</table>
+
+  

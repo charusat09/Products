@@ -1,0 +1,30 @@
+<table class="adDetails">
+	
+		<th>
+			<h2><%= f.ad_title %>	</h2>
+		</th>
+	
+	
+	<tr>
+		<td><%= f.rent_type %></td>
+		<td><%= f.prise %></td>
+	</tr>
+	<tr>
+		<td><%= f.area %></td>
+		<td><%= f.owner_type %></td>
+	</tr>
+	<tr>
+		<td><%= f.condition %></td>
+		<td><%= f.extra %></td>
+	</tr>
+	<tr>
+		<td>
+ 		<%= link_to("Full Ad", {:controller =>'Home' ,:action => 'show' , :id => f.id }, :class => "acton show") %>
+ 		</td>
+ 		<td>
+ 		<%= link_to("edit", {:controller =>'Home' ,:action => 'edit' , :id => f.id }, :class => "acton show") %>
+ 		</td>
+	</tr>
+
+	
+</table>
